@@ -1,8 +1,18 @@
-<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-<model-viewer src="./shared-assets/models/Astronaut.glb" 
-    ar ar-modes="webxr scene-viewer quick-look" 
-    ar-scale="auto" 
-    camera-controls alt="A 3D model of an astronaut" 
-    skybox-image="./shared-assets/environments/aircraft_workshop_01_1k.hdr" 
-    ios-src="./shared-assets/models/Astronaut.usdz">
-</model-viewer>
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Nikita Stetskiy">
+        <title>Vault-AR</title>
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    </head>
+    <body>   
+        <model-viewer src="./shared-assets/models/Astronaut.glb" 
+            ar ar-modes="webxr scene-viewer quick-look" 
+            ar-scale="auto" 
+            camera-controls alt="A 3D model of an astronaut" 
+            skybox-image="./shared-assets/environments/aircraft_workshop_01_1k.hdr" 
+            ios-src="./shared-assets/models/Astronaut.usdz">
+        </model-viewer>
+    </body>
+</html>
