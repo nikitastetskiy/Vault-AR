@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Vault-AR</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <!-- Carousel -->
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- model-viewer -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+      model-viewer {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(214, 213, 213, 0.5);
+      }
+      .card-img-top {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+      }
+      .card-text {
+        width: 100%;
+        height: 70px;
+        object-fit: cover;
+      }
+      .card-text a{
+        color:rgb(99, 99, 99);
+      }
+      #intro {
+        /* Margin to fix overlapping fixed navbar */
+        margin-top: 58px;
+      }
+      @media (max-width: 991px) {
+        #intro {
+          /* Margin to fix overlapping fixed navbar */
+          margin-top: 45px;
+        }
+      }
+    </style>
+</head>
+<body>
+      <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand" target="_blank" href="index.html">
+          <img src="https://spectrum.imgix.net/communities/263cf76e-d4ce-4c11-92d8-60141b2912c8/ecbf1444-c5e7-48e3-94cf-347661441f02-model-viewer-logo.png?w=256&h=256&dpr=2&auto=compress&expires=1612396800000&ixlib=js-1.3.0&s=b2a69d7ffdfd4c21ac2b6e2aa319ff6f" height="30" alt="" loading="lazy"
+            style="margin-top: -3px;" />
+        </a>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+          aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" rel="nofollow"
+                target="_blank">Item Viewer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/nikitastetskiy/Vault-AR/blob/main/README.md" target="_blank">References</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav d-flex flex-row">
+            <!-- Icons -->
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link" href="https://github.com/nikitastetskiy" rel="nofollow" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Jumbotron -->
+    <div id="intro" class="p-5 text-center bg-light">
+      <h1 class="mb-3 h2">Vault-AR</h1>
+      <p class="mb-3">Nikita Stetskiy</p>
+      <a class="btn btn-primary m-2" href="https://github.com/nikitastetskiy" role="button" rel="nofollow"
+        target="_blank">My Github</a>
+      <a class="btn btn-primary m-2" href="https://github.com/nikitastetskiy/Vault-AR" target="_blank"
+        role="button">Fork This</a>
+    </div>
+    <!-- Jumbotron -->
+    <hr class="m-0" />
+    
+  </header>
+  <!--Main Navigation-->
+
+  <!--Main layout-->
+  <main class="my-5">
+    <div class="container">
+      <!--Section: Content-->
+      <section class="text-center">
+        <h4 class="mb-5"><strong>Latest Uploads</strong></h4>
+        <!-- ASTRONAUTA -->
+        <div class="row">
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                  <div class="card-img-top">
+                    <model-viewer scale="0.2 0.2 0.2" bounds="tight" touch-action="none" disable-zoom shadow-intensity="1" camera-controls ar ar-modes="webxr scene-viewer quick-look" src="shared-assets/models/Astronaut.glb" alt="A 3D model of an Astronaut">
+                  </div>
+              </div>
+
+              <div class="card-body">
+                <h5 class="card-title">Astronaut</h5>
+                <p class="card-text">
+                    Basic example. <a href="https://poly.google.com/view/dLHpzNdygsg">Astronaut</a> by <a href="https://poly.google.com/user/4aEd8rQgKu2">Poly</a>,
+                    licensed under <a href="https://creativecommons.org/licenses/by/2.0/">CC-BY</a>.
+                </p>
+                <a href="#!" class="btn btn-primary">View</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <div class="owl-carousel owl-1">
+                  <div class="card-img-top">
+                    <model-viewer scale="0.001 0.001 0.001" bounds="tight" orientation="0 90deg 0" bounds="tight" touch-action="none" disable-zoom camera-controls ar ar-modes="webxr scene-viewer quick-look" src="shared-assets/models/LittlePlanter/files/inner_pot.glb" alt="A 3D model of a pot">
+                  </div>
+                  <div>
+                    <img src="shared-assets/models/LittlePlanter/images/little_Planter.jpg" class="card-img-top" />
+                    <a href="https://www.thingiverse.com/thing:4826953">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                  </div>
+                  <div>
+                    <img src="shared-assets/models/LittlePlanter/images/little_Planter2.jpg" class="card-img-top" />
+                    <a href="https://www.thingiverse.com/thing:4826953">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                  </div>
+                  <div>
+                    <img src="shared-assets/models/LittlePlanter/images/little_Planter_3.PNG" class="card-img-top" />
+                    <a href="https://www.thingiverse.com/thing:4826953">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                  </div>
+                  <div>
+                    <img src="shared-assets/models/LittlePlanter/images/little_Planter_4.PNG" class="card-img-top" />
+                    <a href="https://www.thingiverse.com/thing:4826953">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                  </div>
+                  <div>
+                    <img src="shared-assets/models/LittlePlanter/images/inner_pot.png" class="card-img-top" />
+                    <a href="https://www.thingiverse.com/thing:4826953">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card-body">
+                <h5 class="card-title">Little Planter</h5>
+                <p class="card-text">
+                  You can plant your plants into the inner pot.
+                  <a href="https://www.thingiverse.com/thing:4826953">Little Planter</a> by <a href="https://www.thingiverse.com">ThingVerse</a>.
+                </p>
+                <a href="#!" class="btn btn-primary">View</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <div class="owl-carousel owl-1">
+                  <div class="card-img-top">
+                    <model-viewer scale="0.0015 0.0015 0.0015" orientation="14 4.75 4.65" bounds="tight" touch-action="none" disable-zoom camera-controls ar ar-modes="webxr scene-viewer quick-look" src="shared-assets/models/Mandalorian/files/MB_Casco.glb" alt="A 3D model of a Mandalorian">
+                  </div>
+                  <div>
+                    <img src="shared-assets/models/Mandalorian/images/500MB.jpg" class="card-img-top" />
+                    <a href="https://www.thingiverse.com/thing:4850379">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                  </div>
+                  <div>
+                    <img src="shared-assets/models/Mandalorian/images/MB_Casco.png" class="card-img-top" />
+                    <a href="https://www.thingiverse.com/thing:4850379">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card-body">
+                <h5 class="card-title">Mandalorian</h5>
+                <p class="card-text">
+                  Mandalorian Bust 1/4 Scale STL tested and ready for 3D printing.
+                  <a href="https://www.thingiverse.com/thing:4850379">Mandalorian</a> by <a href="https://www.thingiverse.com">ThingVerse</a>.
+                </p>
+                <a href="#!" class="btn btn-primary">View</a>
+              </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <div class="owl-carousel owl-1">
+                  <div class="card-img-top">
+                    <model-viewer scale="0.0015 0.0015 0.0015" placement="wall" orientation="0 0 0" bounds="tight" touch-action="none" disable-zoom camera-controls ar ar-modes="webxr scene-viewer quick-look" src="shared-assets/models/Rose/files/rose.glb" alt="A 3D model of a rose">
+                  </div>
+                  <div>
+                    <img src="shared-assets/models/Rose/images/rose.jpg" class="card-img-top" />
+                    <a href="https://www.thingiverse.com/thing:4851902">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card-body">
+                <h5 class="card-title">Rose</h5>
+                <p class="card-text">
+                  Just a small rose designed for mother's day.
+                  <a href="https://www.thingiverse.com/thing:4851902">Rose</a> by <a href="https://www.thingiverse.com">ThingVerse</a>.
+                </p>
+                <a href="#!" class="btn btn-primary">View</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <div class="owl-carousel owl-1">
+                  <div class="card-img-top">
+                    <model-viewer scale="0.0015 0.0015 0.0015" orientation="0 -90deg -65" bounds="tight" touch-action="none" disable-zoom camera-controls ar ar-modes="webxr scene-viewer quick-look" src="shared-assets/models/DonkeyKong/files/dk_final.glb" alt="A 3D model of a rose">
+                  </div>
+                  <div>
+                    <img src="shared-assets/models/DonkeyKong/images/dk_final.png" class="card-img-top" />
+                    <a href="https://www.thingiverse.com/thing:4051042">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                  </div>
+                  <div>
+                    <img src="shared-assets/models/DonkeyKong/images/DK_glued.jpg" class="card-img-top" />
+                    <a href="https://www.thingiverse.com/thing:4051042">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                  </div>
+                  <div>
+                    <img src="shared-assets/models/DonkeyKong/images/DK_pre-glue.jpg" class="card-img-top" />
+                    <a href="https://www.thingiverse.com/thing:4051042">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                  </div>
+                  <div>
+                    <img src="shared-assets/models/DonkeyKong/images/Donkey_Kong_Rear.jpg" class="card-img-top" />
+                    <a href="https://www.thingiverse.com/thing:4051042">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                  </div>
+                  <div>
+                    <img src="shared-assets/models/DonkeyKong/images/Donkey_Kong.jpg" class="card-img-top" />
+                    <a href="https://www.thingiverse.com/thing:4051042">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card-body">
+                <h5 class="card-title">Donkey Kong</h5>
+                <p class="card-text">
+                  Just a small Donkey Kong designed for mother's day.
+                  <a href="https://www.thingiverse.com/thing:4051042">Donkey Kong</a> by <a href="https://www.thingiverse.com">ThingVerse</a>.
+                </p>
+                <a href="#!" class="btn btn-primary">View</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <div class="owl-carousel owl-1">
+                  <div class="card-img-top">
+                    <model-viewer scale="0.0015 0.0015 0.0015" orientation="0 0 0" bounds="tight" touch-action="none" disable-zoom camera-controls ar ar-modes="webxr scene-viewer quick-look" src="shared-assets/models/AmongUs/files/bodyFull.glb" alt="A 3D model of an imposter">
+                  </div>
+                  <div class="card-img-top">
+                    <model-viewer scale="0.0015 0.0015 0.0015" orientation="0 0 0" bounds="tight" touch-action="none" disable-zoom camera-controls ar ar-modes="webxr scene-viewer quick-look" src="shared-assets/models/AmongUs/files/ghost.glb" alt="A 3D model of an imposter">
+                  </div>
+                  <div class="card-img-top">
+                    <model-viewer scale="0.0015 0.0015 0.0015" orientation="0 0 0" bounds="tight" touch-action="none" disable-zoom camera-controls ar ar-modes="webxr scene-viewer quick-look" src="shared-assets/models/AmongUs/files/impostbodyFull.glb" alt="A 3D model of an imposter">
+                  </div>
+                  <div>
+                    <img src="shared-assets/models/AmongUs/images/bodyFull.png" class="card-img-top" />
+                    <a href="https://www.thingiverse.com/thing:4661083">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                  </div>
+                  <div>
+                    <img src="shared-assets/models/AmongUs/images/a.jpg" class="card-img-top" />
+                    <a href="https://www.thingiverse.com/thing:4661083">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                  </div>
+                  <div>
+                    <img src="shared-assets/models/AmongUs/images/b.jpg" class="card-img-top" />
+                    <a href="https://www.thingiverse.com/thing:4661083">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                  </div>
+                  <div>
+                    <img src="shared-assets/models/AmongUs/images/impostbodyFull.png" class="card-img-top" />
+                    <a href="https://www.thingiverse.com/thing:4661083">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card-body">
+                <h5 class="card-title">Among Us</h5>
+                <p class="card-text">
+                  This model is under "Attribution + Noncommercial + ShareAlike".
+                  <a href="https://www.thingiverse.com/thing:4661083">Impostor</a> by <a href="https://www.thingiverse.com">ThingVerse</a>.
+                </p>
+                <a href="#!" class="btn btn-primary">View</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Section: Content-->
+
+      <!-- Pagination -->
+      <nav class="my-4" aria-label="...">
+        <ul class="pagination pagination-circle justify-content-center">
+          <li class="page-item">
+            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item active" aria-current="page">
+            <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </main>
+  <!--Main layout-->
+
+  <!--Footer-->
+  <footer class="bg-light text-lg-start">
+    <hr class="m-0" />
+    <div class="text-center py-4 align-items-center">
+      <p>This is just an example page. Created with MDBootstrap, OwlCarousel2 and &ltmodel-viewer>. </p>
+    </div>
+  </footer>
+  <!--Footer-->
+
+</body>
+</html>
