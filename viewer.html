@@ -43,10 +43,10 @@
         margin-top: 5px;
       }
       .carta {
-        margin: 100px;
+        padding: 50px 50px 100px 100px;
       }
       .card {
-        width: 38rem;
+        width: 100%;
       }
       .card-img-top {
         width: 100%;
@@ -77,6 +77,9 @@
         margin-top: 58px;
       }
       @media (max-width: 991px) {
+        .carta {
+          padding: 50px 50px 50px 50px;
+        }
         #intro {
           /* Margin to fix overlapping fixed navbar */
           margin-top: 45px;
@@ -144,8 +147,8 @@
   <main class="my-5">
 
     <!-- Jumbotron -->
-    <div class="text-center d-flex flex-row carta">
-      <div class="mb-3 align-items-center">
+    <div class="row text-center">
+      <div class="col-md-6 align-self-end align-items-center carta">
         <div class="card">
           <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
             <div class="owl-carousel owl-1">
@@ -184,15 +187,11 @@
               </div>
             </div>
           </div>
+        </div>
       </div>
-    </div>
     <!-- Jumbotron -->
 
-
-      
-      <div class="card-body">
-      </div>
-      <div class="">
+      <div class="col-md-6 align-self-start carta">
         <h3 class="mb-3 h3">Donkey Kong</h3>
         <p class="card-text mb-3">
           Just a small Donkey Kong designed for mother's day.
